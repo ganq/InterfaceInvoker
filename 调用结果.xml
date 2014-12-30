@@ -1,0 +1,32 @@
+<root>
+
+<!-- 序号：1,beanId:娃哈哈,接口:com.mysoft.b2b.dubboapi.DubboPfService,方法：save2 -->
+<结果>
+<list>
+  <com.mysoft.b2b.dubboapi.User>
+    <id>1</id>
+    <name>我33草</name>
+  </com.mysoft.b2b.dubboapi.User>
+  <com.mysoft.b2b.dubboapi.User>
+    <id>2</id>
+    <name>我草22你妹</name>
+  </com.mysoft.b2b.dubboapi.User>
+  <com.mysoft.b2b.dubboapi.User>
+    <id>3</id>
+    <name>我草尼玛32</name>
+  </com.mysoft.b2b.dubboapi.User>
+</list>
+</结果>
+
+<!-- 序号：2,beanId:null,接口:com.mysoft.b2b.dubboapi.DubboPfService,方法：addMap -->
+<结果>
+<string>User [id=1, name=我33草]User [id=2, name=我草22你妹]User [id=3, name=我草尼玛32]</string>
+</结果>
+
+<!-- 序号：3,beanId:null,接口:com.mysoft.b2b.dubboapi.DubboPfService,方法：get2 -->
+<结果>
+<string>xxx-123</string>
+</结果>
+
+
+</root>

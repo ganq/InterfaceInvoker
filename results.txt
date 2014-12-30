@@ -1,0 +1,19 @@
+----------Benchmark Statistics--------------
+ beginTime: 2013-11-05 10:52:52
+ endTime: 2013-11-05 10:53:42
+ Concurrents: 30
+ ClientNums: 2
+ Runtime: 50 seconds
+ Benchmark Time: 11
+ Requests: 109052 Success: 100% (109052) Error: 0% (0)
+ Avg TPS: 4453 Max TPS: 6598 Min TPS: 1199
+ Avg responseTime: 6.736ms
+ responseTime <= 0: 13% 14799/109052
+ responseTime (0,1]: 12% 14008/109052
+ responseTime (1,5]: 57% 62562/109052
+ responseTime (5,10]: 8% 8926/109052
+ responseTime (10,50]: 7% 8521/109052
+ responseTime (50,100]: 0% 170/109052
+ responseTime (100,500]: 0% 36/109052
+ responseTime (500,1000]: 0% 0/109052
+ responseTime > 1000: 0% 30/109052

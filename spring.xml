@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="configure" class="com.mysoft.Configure">
+		<property name="configures">
+			<list>
+				<bean class="com.mysoft.Configure" >
+					<property name="beanId" value="娃哈哈"></property>
+					<property name="providerAddress" value="10.5.24.211:20881"></property>
+					<property name="interfaceName" value="com.mysoft.b2b.dubboapi.DubboPfService"></property>
+					<property name="methodName" value="save2"></property>
+					<property name="methodInvokeArgs">
+						<list>
+							<list value-type="java.util.List">
+								<bean class="com.mysoft.b2b.dubboapi.User">
+									<property name="id" value="1"></property>
+									<property name="name" value="我33草"></property>
+								</bean>
+								<bean class="com.mysoft.b2b.dubboapi.User">
+									<property name="id" value="2"></property>
+									<property name="name" value="我草22你妹"></property>
+								</bean>
+								<bean class="com.mysoft.b2b.dubboapi.User">
+									<property name="id" value="3"></property>
+									<property name="name" value="我草尼玛32"></property>
+								</bean>
+							</list>
+						</list>
+					</property>
+				</bean>
+				<bean class="com.mysoft.Configure">
+					<property name="providerAddress" value="10.5.24.211:20881"></property>
+					<property name="interfaceName" value="com.mysoft.b2b.dubboapi.DubboPfService"></property>
+					<property name="methodName" value="addMap"></property>
+					<property name="methodInvokeArgs">
+						<map>
+							<entry key="aa">
+								<bean class="com.mysoft.b2b.dubboapi.User">
+									<property name="id" value="1"></property>
+									<property name="name" value="我33草"></property>
+								</bean>
+							</entry>
+							<entry key="bb">
+								<bean class="com.mysoft.b2b.dubboapi.User">
+									<property name="id" value="2"></property>
+									<property name="name" value="我草22你妹"></property>
+								</bean>
+							</entry>
+							<entry key="cc">
+								<bean class="com.mysoft.b2b.dubboapi.User">
+									<property name="id" value="3"></property>
+									<property name="name" value="我草尼玛32"></property>
+								</bean>
+							</entry>
+						</map>
+
+					</property>
+
+				</bean>
+				<bean class="com.mysoft.Configure">
+					<property name="providerAddress" value="10.5.24.211:20881"></property>
+					<property name="interfaceName" value="com.mysoft.b2b.dubboapi.DubboPfService"></property>
+					<property name="methodName" value="get2"></property>
+					<property name="methodInvokeArgs">
+						<list>
+							<value type="java.lang.String">xxx</value>
+							<value type="int">123</value>
+						</list>
+					</property>
+				</bean>
+			</list>
+		</property>
+	</bean>
+
+</beans>
